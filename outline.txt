@@ -1,15 +1,28 @@
 Focus on WHAT and WHY. Not as much how.
+Why > What > How
+
+Key Idea:
+   You can use fable without rewriting your whole project.
+
+How = live demo?
+
+A memorable talk takes a concise idea, makes the audience care about it, and has a clear and convincing execution.
 
 =============
-1. Introduce Eric
-   - bts
+1. Introduce Myself
+   - BTS
 2. What is F#
    - If you're N talks into an F# conference and you still don't know I can't help you
 3. What is Fable?
    - Recommended path?
    - What is Elmish?
+   - FABLE
+4. Fable has taken advantage of the javascript/react ecosystem
+   * elmish depends on react
+
 4. Elmish is great if you're starting fresh
    We don't usually have that luxury
+
 5. Options
    - Mix/match in one project?
       what boundaries?
