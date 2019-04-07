@@ -1,0 +1,19 @@
+Focus on WHAT and WHY. Not as much how.
+
+=============
+1. Introduce Eric
+   - bts
+2. What is F#
+   - If you're N talks into an F# conference and you still don't know I can't help you
+3. What is Fable?
+   - Recommended path?
+   - What is Elmish?
+4. Elmish is great if you're starting fresh
+   We don't usually have that luxury
+5. Options
+   - Mix/match in one project?
+      what boundaries?
+   - Needs your team to be onboard
+6. A more subversive way?
+   
+
