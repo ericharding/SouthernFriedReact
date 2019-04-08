@@ -1,4 +1,5 @@
 Focus on WHAT and WHY. Not as much how.
+
 Why > What > How
 
 Key Idea:
@@ -6,7 +7,7 @@ Key Idea:
 
 How = live demo?
 
-A memorable talk takes a concise idea, makes the audience care about it, and has a clear and convincing execution.
+"A memorable talk takes a concise idea, makes the audience care about it, and has a clear and convincing execution."
 
 =============
 1. Introduce Myself
@@ -17,8 +18,8 @@ A memorable talk takes a concise idea, makes the audience care about it, and has
    - Recommended path?
    - What is Elmish?
    - FABLE
-4. Fable has taken advantage of the javascript/react ecosystem
-   * elmish depends on react
+4. Fable has taken advantage of the JavaScript/react ecosystem
+   * Elmish depends on react
 
 4. Elmish is great if you're starting fresh
    We don't usually have that luxury
@@ -28,5 +29,14 @@ A memorable talk takes a concise idea, makes the audience care about it, and has
       what boundaries?
    - Needs your team to be onboard
 6. A more subversive way?
+
+7. Demo on Codepen.io with unpkg.com
+
    
+=
+Why?
+- 'test drive' F# in your existing app
+- Give back to the React/JavaScript community
+- (low-key) Evangelize F#
+
 
