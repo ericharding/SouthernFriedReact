@@ -8,14 +8,11 @@
     "react": "^15.5.4"
   },
   "dependencies": {
-    "core-js": "2",
-    "react": "^15.5.4",
-    "webpack": "^4.26.1"
+    "core-js": "2"
   },
   "scripts": {
     "start": "webpack --watch",
-    "build": "webpack",
-    "split": "fable-splitter --config splitter.config.js"
+    "build": "webpack"
   },
   "author": {
     "name": "Eric",
@@ -28,7 +25,8 @@
     "babel-loader": "^8.0.5",
     "fable-compiler": "^2.1.10",
     "fable-loader": "^2.1.2",
-    "fable-splitter": "^2.1.2",
+    "react": "^15.5.4",
+    "webpack": "^4.26.1",
     "webpack-cli": "^3.2.1"
   }
 }

@@ -3,6 +3,7 @@ const babelConf = {
   presets: [ 
     ["@babel/preset-env", {
       "modules":false,
+      "corejs": 2,
       "useBuiltIns": "usage"
     }]
 ]}
