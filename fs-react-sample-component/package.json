@@ -1,6 +1,6 @@
 {
   "name": "fs-react-sample-component",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Built with Fable",
   "main": "build/index.js",
   "license": "mit",
