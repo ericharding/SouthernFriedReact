@@ -7,11 +7,23 @@ Because we can.
 
 # What?
 
-## fs-react-component
+## fs-react-sample-component
 
     Sample F# React component which can be build and published to NPM
 
-## fs-elmish-component
+```bash
+cd fs-react-sample-component
+yarn build
+npm link
+# optionally yarn watch
+
+cd ../js-test
+yarn
+npm-link fs-react-sample-component
+yarn start
+```
+
+## fs-elmish-sample-component
     Sample showing how to convert an Elmish app to a react component which can be embedded in a regular JavaScript page.
         
 ## js-test

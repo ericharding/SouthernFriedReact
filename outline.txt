@@ -18,10 +18,11 @@ How = live demo?
    - Recommended path?
    - What is Elmish?
    - FABLE
+
 4. Fable has taken advantage of the JavaScript/react ecosystem
    * Elmish depends on react
 
-4. Elmish is great if you're starting fresh
+4. Elmish is amazing if you're starting fresh
    We don't usually have that luxury
 
 5. Options
