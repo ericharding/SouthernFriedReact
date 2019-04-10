@@ -15,7 +15,7 @@
     "build": "webpack"
   },
   "author": {
-    "name": "Eric",
+    "name": "Eric Harding",
     "email": "eric@digitalsorcery.net"
   },
   "devDependencies": {

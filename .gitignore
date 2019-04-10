@@ -1,5 +1,11 @@
 fs-react-sample-component/src/obj
 fs-react-sample-component/src/bin
 fs-react-sample-component/build
+
+js-test/build
+js-test/coverage
+
 node_modules
 yarn-error.log
+yarn-debug.log
+npm-debug.log
