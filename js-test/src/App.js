@@ -14,7 +14,7 @@ class App extends Component {
             Edit <code>src/App.js</code> and save to reload.
           </p>
           <FSComponent name="from F#" />
-          <CounterComponent name="from F#" />
+          <CounterComponent src="https://southernfriedfsharp.com/sandwich.png" />
         </header>
       </div>
     );
