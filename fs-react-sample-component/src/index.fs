@@ -2,6 +2,12 @@ module FancyComponent
 
 open Fable.React
 
+(*
+// Use these imports if you are targeting Fable 2.0.3 (stable)
+open Fable.Import.React
+open Fable.Helpers.React
+*)
+
 type JSComponentProps = {
     name : string
 }
