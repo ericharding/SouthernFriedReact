@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "Built with Fable",
   "main": "build/index.js",
+  "homepage": "https://github.com/ericharding/SouthernFriedReact/tree/master/fs-react-sample-component",
   "license": "mit",
   "peerDependencies": {
     "react": "^15.5.4"
@@ -16,7 +17,8 @@
   },
   "author": {
     "name": "Eric Harding",
-    "email": "eric@digitalsorcery.net"
+    "email": "eric@digitalsorcery.net",
+    "url": "https://blog.digitalsorcery.net"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

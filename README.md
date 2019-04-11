@@ -31,10 +31,15 @@ yarn start
     Javascript test project which includes the f# project without reference to fable
 
 
-
 # How
 
  Magic, probably.
+
+# Demo
+
+https://unpkg.io/react@15.6.2/dist/react.min.js
+https://unpkg.io/react-dom@15.6.2/dist/react-dom.min.js
+https://unpkg.com/fs-react-sample-component@0.0.2/build/index.js
 
 
 # References
