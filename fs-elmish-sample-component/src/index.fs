@@ -1,9 +1,6 @@
 module ElmishComponent
 
-// For Fable 3
 open Fable.React
-
-open Counter
 
 type Props = {
     src : string option
