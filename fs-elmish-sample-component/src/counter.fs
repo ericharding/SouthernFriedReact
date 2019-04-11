@@ -1,9 +1,9 @@
 module Counter
 
-open Fable.Import.React
-open Fable.Helpers.React
-open Fable.Helpers.React.Props
+open Fable.React
+open Fable.React.Props
 open Elmish
+open Elmish.React
 
 type Model = {
   image : string
@@ -42,5 +42,7 @@ let view (model:Model) dispatch =
 
 let program = 
   Program.mkSimple init update view
+  // |> lazyView2
 
-let element = 
+// let element = 
+//   Elmish.Program.

@@ -1,9 +1,7 @@
 module ElmishComponent
 
-open Fable.Import.React
-open Fable.Helpers.React
 // For Fable 3
-// open Fable.React
+open Fable.React
 
 open Counter
 
