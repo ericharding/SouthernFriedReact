@@ -1,0 +1,3 @@
+[submodule "slides/FsReveal"]
+	path = slides/FsReveal
+	url = https://github.com/fsprojects/FsReveal
