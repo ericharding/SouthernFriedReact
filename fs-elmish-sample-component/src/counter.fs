@@ -42,7 +42,3 @@ let view (model:Model) dispatch =
 
 let program = 
   Program.mkSimple init update view
-  // |> lazyView2
-
-// let element = 
-//   Elmish.Program.

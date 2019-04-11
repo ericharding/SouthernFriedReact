@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="counter.fs" />
     <Compile Include="adapter.fs" />
+    <Compile Include="counter.fs" />
     <Compile Include="index.fs" />
   </ItemGroup>
 
