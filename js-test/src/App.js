@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { FSComponent } from 'fs-react-sample-component'
+import { ElmishComponent } from 'fs-elmish-sample-component'
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
             Edit <code>src/App.js</code> and save to reload.
           </p>
           <FSComponent name="from F#" />
+          <ElmishComponent name="from F#" />
         </header>
       </div>
     );

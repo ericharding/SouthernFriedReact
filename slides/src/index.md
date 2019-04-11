@@ -52,6 +52,12 @@ SFF is a local meetup, come join us.
 
 ***
 
+## The End
+
+- Slides available at [https://github.com/ericharding/SouthernFriedReact](https://github.com/ericharding/SouthernFriedReact)
+
+***
+
 ## Multi level slides
 
 #### Slide #1

@@ -1,0 +1,34 @@
+{
+  "name": "fs-elmish-sample-component",
+  "version": "0.0.2",
+  "description": "Built with Fable",
+  "main": "build/index.js",
+  "homepage": "https://github.com/ericharding/SouthernFriedReact/tree/master/fs-elmish-sample-component",
+  "license": "mit",
+  "peerDependencies": {
+    "react": "^15.5.4"
+  },
+  "dependencies": {
+    "core-js": "2"
+  },
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "author": {
+    "name": "Eric Harding",
+    "email": "eric@digitalsorcery.net",
+    "url": "https://blog.digitalsorcery.net"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.2.3",
+    "babel-loader": "^8.0.5",
+    "fable-compiler": "^2.1.10",
+    "fable-loader": "^2.1.2",
+    "react": "^15.5.4",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.2.1"
+  }
+}
