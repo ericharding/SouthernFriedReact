@@ -46,7 +46,9 @@ How = live demo?
    - Needs your team to be onboard
 6. A more subversive way?
 
-7. Demo on Codepen.io with unpkg.com
+7. Demo on Codepen.io with unpkg.com 
+
+> **Atwood's Law**: any application that can be written in JavaScript, will eventually be written in JavaScript.
 
    
 =

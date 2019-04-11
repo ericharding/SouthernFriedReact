@@ -1,7 +1,10 @@
 @echo off
-set SLIDES=%~dp0\src
+set HERE=%~dp0
 cd FSReveal
 rmdir /s /q slides
-mklink /d slides %SLIDES%
+rmdir /s /q output
+mklink /d slides %HERE%\src
+mkdir %HERE%\output
+mklink /d output %HERE%\output
 build.cmd
 

@@ -5,6 +5,8 @@ fs-react-sample-component/build
 js-test/build
 js-test/coverage
 
+slides/output
+
 node_modules
 yarn-error.log
 yarn-debug.log
