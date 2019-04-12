@@ -15,7 +15,7 @@ class App extends Component {
           </p>
           <FSComponent name="from F#" />
           <ManualImgSpinner src="https://southernfriedfsharp.com/sandwich.png" />
-          <ImgSpinner src="https://southernfriedfsharp.com/sandwich.png" />
+          <ImgSpinner src="https://southernfriedfsharp.com/sfflogo_large2.png" />
         </header>
       </div>
     );

@@ -10,28 +10,37 @@ How = live demo?
 "A memorable talk takes a concise idea, makes the audience care about it, and has a clear and convincing execution."
 
 =============
-1. Introduce Myself
+
+* Introduction
    - BTS
-   - chicken sandwich
+   - meetup
 
 //
-// WHAT
+// BACKGROUND
 
-2. What is F#
-   - If you're N talks into an F# conference and you still don't know I can't help you
-3. What is Fable?
-   - Recommended path?
-   - What is Elmish?
-   - FABLE
-   - babel/webpack
-3.1 Webpack/Babel
+*. What is F#
+   - If you're 7 talks into an F# conference and you still don't know I can't help you
+
+*. What is Fable?
+   - mature F# to JavaScript compiler
+   - version 3 soon
+   - babel
+
+* What is Elmish?
+
+3 Webpack/Babel
    - Fable
+
+
+//
+// WHAT- am I asking you to do
 
 //
 // WHY
 
-* Participate in the javascript ecosystem
-* Try out F# without fully committing
+* Fully Participate in the JavaScript ecosystem
+* Try out F#/Elmish without fully committing
+* Evangelize F#
 
 
 4. Fable has taken advantage of the JavaScript/react ecosystem
@@ -63,3 +72,4 @@ Why?
 - (low-key) Evangelize F#
 
 
+https://fable.io/repl/#?code=LYewJgrgNgpgBAYRBAdgFxgJwFDZABxhTgDEBDAI1gDoBJYfETNagJRjIGM09DjyqMagAkYUQpgDObDt15FSlGqPFZp7LiwAKmApPnEAolGABLSQAsA3AbjGzlmZpvY0AT0JwAsuDFwAvHAA3thwcKbAZADm8ABccJJomKYoUaFwZKmwcPEAZlAgZDwAvrjunl6SUQHpAD5wADIwuWhwILlw+YU8YfWsplEWre2dBUV1cOySMDzYsK0ppmgAFACUNWFB4ZExAXAARENo+JKxAPRnkshoFlgouckwYLmWZJj41JwgwJe5XVEgAD6UDeMQATNR8Kl9lYMll4IEAAzURFwUpzGZwCD4MBFeDAKpwUBgPz+dKRNCcCxEwkAdyWFgmTRaGTgAFoAHzBIm+KBwek3OFRbKBYliaiZYXwNms0q9SYDIaszncsV8gXUyUinkkqAS+FwADUsomU0xKq2av5DKF2uRqPR8zgADdTDBaXBlmrYj5deswOZ8EUqRs4AHnQBtAC6cAj6TCFAgaDQIGIEYA8igEFBTJwANae3KoOCA9lcgOSIOU6nLZmtACMyNWqxjEcSmAOdf2Ufj22qcbCg7gAGVMJwdeKItEYL2wsP3NkI3BZ0O4AB1UxgQVgxGIldD0SK1o7ver1cAFUwmUkuSYwE9leS6A6+10aDxywApLkSVFVvsJz1LUYHWGMeyHRNk1TWNM2zXMC2WItiFLFUKyrENln6QYGybFtY3bA4sKGbte0glM01gnN80LYsUPLQNg2pM00DwtskgOBAiAwTASLCHtsAuOAAEF8HwbAdBAKIr2AahgDzYcInwbJFlabFcQwF03VpbBai5CSpLIGSNSQFArlgS8uBnXS4H06TqA1DRuGHNwUCpXQUGQSQDjEBwLDZMhRP2HS9N0AyZMwVBsCAA&html=DwCwLgtgNgfAUHUBTAhgE3gAm54ElgqbhgAOAtEgI4CuAlgG4C8A5AMID2AdmEj+QBUAnqSQtMAY268erXgA8wAenDQA3JJAoATgGcCTGmABm5ABwssOYLona6pMJl3aJTAEQB9TwAkA8gDKAt5KUHQARrpK2qgSYAB0pNocaDRxdNzxEHRc8QBWuu4wwEq29o5W2DZ2Dk4ubl6+gcGeoRFRMShx5GgcEInJqemZ2bkFRSVltfAlIKgYCMDhKUKSUCi6uh4opBRSPCg5SNpFcDi4aIyYdGgeSFDZuiDkO6Tuaxtb7vePz68TSkuDBmSmWaCE8EQKkgsDgQA&css=BYFwtgNgNAUARgewCYE8AEBvGadoGYIB2IAtAM4CWAXgKYBcaAjAGwAOAHgNwwC+MMAOjABDCoRIBjIiFGEaAJ0zZcSCmVYRhKBngg0uynAHcKSEMAaMADFYCk3XGmA0KAc1CWb9w2gBWAVzIQCjwUSWkaYgYJSJAFB1xhCDdxCjiwMmjY+J9dfRJVeRoJYKJohAh-MEJuPkExVn8QJUdWYSRVQlcGAQAmAFYisAScAmJyanomNgNHEzMLNAGrDhG0EXlXMRJEEBAEMEsh2pggA
