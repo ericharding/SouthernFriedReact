@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { FSComponent } from 'fs-react-sample-component'
-import { CounterComponent, CounterComponent2 } from 'fs-elmish-sample-component'
+import { ManualImgSpinner, ImgSpinner } from 'fs-elmish-sample-component'
 
 class App extends Component {
   render() {
@@ -14,8 +14,8 @@ class App extends Component {
             Edit <code>src/App.js</code> and save to reload.
           </p>
           <FSComponent name="from F#" />
-          <CounterComponent src="https://southernfriedfsharp.com/sandwich.png" />
-          <CounterComponent2 src="https://southernfriedfsharp.com/sandwich.png" />
+          <ManualImgSpinner src="https://southernfriedfsharp.com/sandwich.png" />
+          <ImgSpinner src="https://southernfriedfsharp.com/sandwich.png" />
         </header>
       </div>
     );

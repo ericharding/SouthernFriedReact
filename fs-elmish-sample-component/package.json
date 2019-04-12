@@ -1,6 +1,6 @@
 {
   "name": "fs-elmish-sample-component",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Built with Fable",
   "main": "build/index.js",
   "homepage": "https://github.com/ericharding/SouthernFriedReact/tree/master/fs-elmish-sample-component",
