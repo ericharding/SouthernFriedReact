@@ -185,26 +185,169 @@ JavaScript community may be more open to functional programming ideas than .NET
 ## React in F#
 
     open Fable.React
-    type Props = {
-        name : string
-    }
+
+    type Props = { name : string }
+
     type FSComponent(props : Props) as self =
         inherit PureComponent<Props,unit>(props) with
         do self.setInitState()
         override __.render() =
             div [] [str (sprintf "Hello %s" props.name)]
 
-<!-- 
-- Different namespaces in fable 2.x
-- package.json, webpack.config.js
- -->
+- Props & State
+- Component / PureComponent
+- render()
+- HTML DSL 👌
 
-<!-- ### A Note About Webpack
-- Little bit of a dark art
-![witches](https://i.pinimg.com/originals/8e/d2/08/8ed208270ed9981b642c700bf2cacd57.gif) -->
+<!-- 
+- That's basically it
+- Different namespaces in fable 2.x
+- package.json
+- webpack.config.js
+-->
+
+---
+
+## App.js
+
+    [lang=js]
+    import React, { Component } from 'react';
+    import { FSComponent } from 'fs-react-sample-component'
+    class App extends Component {
+      render() {
+        return (
+          <div className="App">
+            <FSComponent name="from F#" />
+          </div>);
+      }
+    }
+
+---
+
+### Publish to NPM
+
+* yarn build
+* yarn publish  
+<span style="color:orange">- or -</span>
+* npm run build
+* npm publish
+
+---
+
+### Consume from NPM
+
+yarn add fs-react-sample-component   
+<span style="color:orange">- or -</span>  
+npm install --save fs-react-sample-component 
+
+- Peer dependency on React
+
+<!-- If you're already using react. You're done -->
+
+---
+
+### For Development
+
+    [lang=bash]
+    cd fs-react-sample-component
+    npm link
+    yarn start
+
+    cd js-test
+    npm link fs-react-sample-component
+    yarn start
+
+- Automatic reload across both projects
+
+<!-- 
+npm link sets up the local connection 
+-->
+
+---
+
+### How Much Overhead?
+
+    [lang=js]
+    Asset      Size  Chunks             Chunk Names
+    index.js  16.9 KiB       0  [emitted]  main
+    Entrypoint main = index.js
+    [0] external "react" 42 bytes {0} [built]
+    [11] sample/src/fs-react-sample-component.fsproj + 9 modules 106 KiB {0} [built]
+        | sample/src/sample.fsproj 27 bytes [built]
+        | sample/src/index.fs 1.51 KiB [built]
+        | sample/.fable/fable-library.2.2.3/Types.js 7.62 KiB [built]
+        | sample/.fable/fable-library.2.2.3/Reflection.js 7.14 KiB [built]
+        | sample/.fable/fable-library.2.2.3/String.js 16 KiB [built]
+        | sample/.fable/fable-library.2.2.3/Util.js 17 KiB [built]
+        | sample/.fable/fable-library.2.2.3/Long.js 34.6 KiB [built]
+        | sample/.fable/fable-library.2.2.3/Date.js 14.3 KiB [built]
+        | sample/.fable/fable-library.2.2.3/RegExp.js 3.56 KiB [built]
+        | sample/.fable/fable-library.2.2.3/Int32.js 4.04 KiB [built]
+        + 10 hidden modules
+    Done in 14.64s.
+
+- 16.9 KiB before gzip
+
+<!--
+Webpack gives a nice breakdown of what you use
+-->
 
 ***
 
+## What About Elmish?
+
+---
+
+### An Adapter
+
+    open Fable.React
+
+    type Props = { src : string option }
+    let ImgSpinner props = 
+        Adapter.toComponent 
+            (fun p -> Counter.init p.src) Counter.update Counter.view props
+
+- React and MVU 🤗  
+
+---
+
+### Adapter.fs
+
+    module Adapter
+    open Fable.React
+
+    type GenericComponent<'p,'s,'m>(
+        init:'p->'s,update:'m->'s->'s,view,props) as self =
+        inherit Component<'p,'s>(props) with
+        do self.setInitState (init props)
+        member __.update msg =
+            let state' = update msg self.state
+            self.setState (fun _ _ -> state')
+        override __.render() =
+            view self.state self.update
+
+    let toComponent init update view props =
+        GenericComponent(init,update,view,props)
+
+---
+
+# Demo
+
+***
+
+## Word of Warning
+
+- This is not a well trodden path (yet)
+- There may be bumps  🤜🤛
+- Community is very helpful
+- [F# Slack](https://fsharp.slack.com/)
+- [Fable Gitter](https://gitter.im/fable-compiler/Fable)
+
+--- 
+# Questions?
+
+---
+
 ## The End
 
-- Slides available at [https://github.com/ericharding/SouthernFriedReact](https://github.com/ericharding/SouthernFriedReact)
+- Slides at [https://github.com/ericharding/SouthernFriedReact](https://github.com/ericharding/SouthernFriedReact)
