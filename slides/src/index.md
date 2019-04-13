@@ -307,6 +307,40 @@ Webpack gives a nice breakdown of what you use
 
 ---
 
+    type Model = {
+      image : string
+      angle : float
+    }
+    type Msg =
+      | Left of float
+      | Right of float
+      | Reset
+
+---
+
+
+    let init img =
+      let img = defaultArg img "https://southernfriedfsharp.com/sfflogo_large2.png"
+      { image = img; angle = 0.0 }
+
+    let update msg model =
+      match msg with
+      | Left a -> { model with angle = model.angle - a }
+      | Right a -> { model with angle = model.angle + a }
+      | Reset -> { model with angle = 0.0 }
+
+    let view (model:Model) dispatch =
+      div[] [
+        img [
+          Src model.image
+          Style [ 
+            Width 200
+            Height 200
+            Transform (sprintf "rotate(%fdeg)" model.angle) ] ]
+      ]
+
+---
+
 ### An Adapter
 
     open Fable.React
