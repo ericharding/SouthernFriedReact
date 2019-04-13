@@ -309,6 +309,10 @@ Webpack gives a nice breakdown of what you use
 
 - React and MVU 🤗  
 
+<!--
+Props is typically a set of fields
+ -->
+
 ---
 
 ### Adapter.fs
@@ -339,9 +343,8 @@ Webpack gives a nice breakdown of what you use
 
 - This is not a well trodden path (yet)
 - There may be bumps  🤜🤛
-- Community is very helpful
-- [F# Slack](https://fsharp.slack.com/)
-- [Fable Gitter](https://gitter.im/fable-compiler/Fable)
+- The community is very helpful
+- Find me on [F# Slack](https://fsharp.slack.com/)
 
 --- 
 # Questions?
