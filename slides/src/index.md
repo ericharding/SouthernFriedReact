@@ -39,6 +39,9 @@ and I want to make sure everyone has, at least, a passing familiarity
 - Component based JavaScript view library
 - Pioneer of the pure view function
 
+
+<!-- very popular -->
+
 ---
 
 ## What is F#?
@@ -70,9 +73,14 @@ Fable transforms the F# AST to the Babel AST
 - Fable leverages the **JavaScript** ecosystem
 
 <!-- 
-Fable is part of the JavaScript world
 Anything you can do with JavaScript you can do with F#
+18 billion vs 11 billion
 -->
+
+---
+
+> **Atwood's Law**:   
+  any application that can be written in JavaScript, will eventually be written in JavaScript. 
 
 ---
 
@@ -192,7 +200,8 @@ JavaScript community may be more open to functional programming ideas than .NET
         inherit PureComponent<Props,unit>(props) with
         do self.setInitState()
         override __.render() =
-            div [] [str (sprintf "Hello %s" props.name)]
+            div [] [
+              str (sprintf "Hello %s" props.name)]
 
 - Props & State
 - Component / PureComponent
@@ -236,9 +245,9 @@ JavaScript community may be more open to functional programming ideas than .NET
 
 ### Consume from NPM
 
-yarn add fs-react-sample-component   
-<span style="color:orange">- or -</span>  
-npm install --save fs-react-sample-component 
+> yarn add fs-react-sample-component   
+   <span style="color:orange">- or -</span>  
+   npm install --save fs-react-sample-component 
 
 - Peer dependency on React
 
@@ -286,7 +295,7 @@ npm link sets up the local connection
         + 10 hidden modules
     Done in 14.64s.
 
-- 16.9 KiB before gzip
+### 17 KiB *before* gzip
 
 <!--
 Webpack gives a nice breakdown of what you use
