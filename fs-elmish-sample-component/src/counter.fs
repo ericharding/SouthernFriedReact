@@ -2,8 +2,6 @@ module Counter
 
 open Fable.React
 open Fable.React.Props
-open Elmish
-open Elmish.React
 
 type Model = {
   image : string
@@ -29,6 +27,7 @@ let update msg model =
 let view (model:Model) dispatch =
   div[] [
     button [OnClick (fun _ -> dispatch (Left 10.))] [str "Left"]
+
     img [
       Src model.image
       Style [ 
