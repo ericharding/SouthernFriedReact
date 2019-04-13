@@ -38,3 +38,6 @@ let view (model:Model) dispatch =
     button [OnClick (fun _ -> dispatch (Right 10.))] [str "Right"]
     button [OnClick (fun _ -> dispatch Reset)] [str "Center"]
   ]
+
+// This is an example of a 'simple' app
+// Program.mkSimple init update view
