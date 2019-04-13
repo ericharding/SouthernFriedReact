@@ -1,10 +1,11 @@
-- title : Publishable React Components with F#
-- description : Introduction to FsReveal
-- author : Karlkim Suwanmongkol
+- title : Publish React Components with F#
+- description : Southern Fried F# Talk - Publish React Components with Fable
+- author : Eric Harding
 - theme : night
 - transition : default
 
 ***
+<!-- theme: sky -->
 
 ## Publish React Components with Fable
 
@@ -140,7 +141,7 @@ Fable packages are mostly for consumption by Fable but they don't have to be
 
 ## Try Before you Buy
 
-- Fable/Elmish is amazing for green field work
+- Elmish is amazing for green field work
 - We don't always have that luxury
 
 <!--
@@ -152,6 +153,7 @@ I wouldn't choose anything else for a green field web project
 - Write a single component in F#
 - Team doesn't even need Fable
 
+  
 > The secret to building large apps is never to build large apps. - *Justin Meyer*
 
 <!--
@@ -159,7 +161,7 @@ Easy to justify
 -->
 
 ---
-## Evangelize F#
+## Spread F#
 1. Publish something useful.
 2. Wait for users to look at the source.
 3. Some will learn enough to contribute back.
@@ -169,10 +171,6 @@ low key
 JavaScript community may be more open to functional programming ideas than .NET
 -->
 
----
-
-> **Atwood's Law**:   
-Any application that can be written in JavaScript, will eventually be written in JavaScript.
 
 ***
 
@@ -182,37 +180,31 @@ Any application that can be written in JavaScript, will eventually be written in
 
 ### I'm glad you asked.
 
+---
+
+## React in F#
+
+    open Fable.React
+    type Props = {
+        name : string
+    }
+    type FSComponent(props : Props) as self =
+        inherit PureComponent<Props,unit>(props) with
+        do self.setInitState()
+        override __.render() =
+            div [] [str (sprintf "Hello %s" props.name)]
+
+<!-- 
+- Different namespaces in fable 2.x
+- package.json, webpack.config.js
+ -->
+
+<!-- ### A Note About Webpack
+- Little bit of a dark art
+![witches](https://i.pinimg.com/originals/8e/d2/08/8ed208270ed9981b642c700bf2cacd57.gif) -->
+
 ***
 
 ## The End
 
 - Slides available at [https://github.com/ericharding/SouthernFriedReact](https://github.com/ericharding/SouthernFriedReact)
-
-***
-
-## Multi level slides
-
-#### Slide #1
-
-- hello
-
----
-
-## Slide #2
-#### sub header
-
-- world
-
----
-## Slide #3
-
-- blank!
-
-***
-
-### Reveal.js
-
-- A framework for easily creating beautiful presentations using HTML.
-
-
-> **Atwood's Law**: any application that can be written in JavaScript, will eventually be written in JavaScript.
