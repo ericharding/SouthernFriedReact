@@ -307,6 +307,8 @@ Webpack gives a nice breakdown of what you use
 
 ---
 
+### A Simple Elmish App
+
     type Model = {
       image : string
       angle : float
@@ -315,6 +317,8 @@ Webpack gives a nice breakdown of what you use
       | Left of float
       | Right of float
       | Reset
+
+...
 
 ---
 
